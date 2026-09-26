@@ -19,6 +19,7 @@ jobs:
       - name: Deploy Application
         env:
           APP_NAME: "AI DevOps Application"
-          APP_ENV: "development"
-          PORT: "80"
+          APP_ENV: "production"
+          PORT: "3000"
+          DATABASE_URL: "mongodb://demo-database:27017/app"
         run: npm start
